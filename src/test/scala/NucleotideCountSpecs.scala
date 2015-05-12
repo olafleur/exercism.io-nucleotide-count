@@ -15,7 +15,6 @@ class NucleotideCountSpecs extends FlatSpec with Matchers {
   }
 
   it should "have only guanosine" in {
-    pending
     val expected = Map('A' -> 0, 'T' -> 0, 'C' -> 0, 'G' -> 8)
     new DNA("GGGGGGGG").nucleotideCounts should be (expected)
   }
