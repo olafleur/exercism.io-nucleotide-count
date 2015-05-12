@@ -1,5 +1,5 @@
 class DNA(s: String) {
-  def nucleotideCounts = Map('A' -> 0, 'T' -> 0, 'C' -> 0, 'G' -> s.length)
+  def nucleotideCounts = Map('A' -> count('A'), 'T' -> count('T'), 'C' -> count('C'), 'G' -> count('G'))
 
   def count(c: Char) = s.filter(_ == c).length
 

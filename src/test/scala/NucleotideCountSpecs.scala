@@ -24,14 +24,12 @@ class NucleotideCountSpecs extends FlatSpec with Matchers {
   }
 
   it should "count a nucleotide only once" in {
-    pending
     val dna = new DNA("CGATTGGG")
     dna.count('T')
     dna.count('T') should be (2)
   }
 
   it should "not change counts after counting adenosine" in {
-    pending
     val dna = new DNA("GATTACA")
     dna.count('A')
     val expected = Map('A' -> 3, 'T' -> 2, 'C' -> 1, 'G' -> 1)
