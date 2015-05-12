@@ -49,14 +49,12 @@ class NucleotideCountSpecs extends FlatSpec with Matchers {
   }
 
   it should "validate dna" in {
-    pending
     evaluating {
       new DNA("John")
     } should produce [IllegalArgumentException]
   }
 
   it should "count all nucleotides" in {
-    pending
     val s = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
     val dna = new DNA(s)
     val expected = Map('A' -> 20, 'T' -> 21, 'G' -> 17, 'C' -> 12)
