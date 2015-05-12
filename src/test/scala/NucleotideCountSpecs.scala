@@ -37,7 +37,6 @@ class NucleotideCountSpecs extends FlatSpec with Matchers {
   }
 
   it should "validate nucleotides" in {
-    pending
     evaluating {
       new DNA("GACT").count('X')
     } should produce [IllegalArgumentException]
