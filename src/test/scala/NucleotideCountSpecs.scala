@@ -20,7 +20,6 @@ class NucleotideCountSpecs extends FlatSpec with Matchers {
   }
 
   "a mixed dna string" should "count only thymidine" in {
-    pending
     new DNA("GGGGGTAACCCGG").count('T') should be (1)
   }
 
