@@ -43,7 +43,6 @@ class NucleotideCountSpecs extends FlatSpec with Matchers {
   }
 
   it should "validate dna not rna" in {
-    pending
     evaluating {
       new DNA("ACGU")
     } should produce [IllegalArgumentException]
